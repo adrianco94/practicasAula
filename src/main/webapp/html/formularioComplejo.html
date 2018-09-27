@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>.cuadro{background-color: yellow}
+            legend{color: green}
+            label{color: brown}
+            body{background-color: yellowgreen}</style>
+
+    </head>
+    <body>
+        <header><h1>FORMULARIO COMPLEJO</h1></header>
+        <form action="../resultFormularioComplejo.java" method="post">
+            <fieldset class="cuadro">
+                <legend><strong>Datos personales:</strong></legend>
+                <p><label for="usuario">Usuario: </label><input type="text" id="usuario"></p>
+                <p><label for="contraseña">Password: </label><input type="password" id="contraseña"></p>
+                <p><label for="edad">Edad: </label><input type="number" id="edad"></p>
+            </fieldset>
+            <fieldset class="cuadro">
+                <legend><strong>Otros datos:</strong></legend>
+                <p><label>Estado civil: </label>
+                    <label for="soltero">Soltero/a:</label>
+                    <input type="radio" name="ecivil" value="Soltero/a" id="soltero" checked="checked">
+                    <label for="casado">Casado/a:</label>
+                    <input type="radio" name="ecivil" value="Casado/a" id="casado" >
+                    <label for="viudo">Viudo/a:</label>
+                    <input type="radio" name="ecivil" value="Viudo/a" id="viudo" >
+                    <label for="divorciado">Divorciado/a:</label>
+                    <input type="radio" name="ecivil" value="Divorciado/a" id="soltero"></p>
+                <label for="selector">Aficiones, uno o varios(CTRL)</label>
+                <br>
+                <select multiple id="aficiones" name="Aficiones" size="6"> 
+                    <option value="Deporte">Deporte</option>
+                    <option value="Musica">Musica</option>
+                    <option value="Informatica">Informática</option>
+                    <option value="Viajes">Viajes</option>
+                    <option value="Tiendas">Tiendas</option>
+                    <option value="Juegos">Juegos</option>
+   <!--opition value selected  -->
+                </select>
+                <p><label for="comentario">Comentario</label></p>
+                <textarea id="comentario" cols="6" ></textarea>
+            </fieldset>
+            <fieldset class="cuadro">
+                <legend>Medios Tecnológicos</legend>
+                <label>Dispones de internet?</label>
+                <label for="si">Sí</label>
+                <input type="radio" name="internet" value="si" id="si">
+                <label for="no">no</label>
+                <input type="radio" name="internet" value="no" id="no" 
+                       
+                <label>Sistema operativo(elige uno)</label>
+                <select>
+                    <option value="linux">Linux</option>
+                    <option value="windows">Windows</option>
+                    <option value="mac">Mac</option>
+                    <option value="solaris">Solaris</option>
+
+
+                </select>
+            </fieldset>
+
+        </form>
+    </body>
+</html>

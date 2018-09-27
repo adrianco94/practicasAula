@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{width: 33%}
+        </style>
+    </head>
+    <body>
+        <form action="../resultFormularioSencillo" method="post">
+            <fieldset> 
+                <legend><em><strong>Formulario sencillo: </strong> </em></legend>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario">
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+                <br>
+                <label for="pulsa">Pulsa y marca</label>
+                <input type="checkbox" name="marca" value="se ha marcado" id="pulsa">
+                <br>
+                <input type="submit" name="enviar" value="Enviar datos">
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -16,7 +16,7 @@ and open the template in the editor.
     <header>
         <h1>Registro</h1>
     </header>
-    <form action="" method="post">
+    <form action="../Registro" method="post">
         <fieldset>
             <legend>Datos personales:</legend>
             <label for="Nombre">Nombre:</label>
@@ -26,8 +26,8 @@ and open the template in the editor.
             <input type="text" id="Apellidos" name="Apellidos">
             <br>
             <label>Sexo: </label>
-            <input type="radio" name="sexo" value="Hombre"> Hombre
-            <input type="radio" name="sexo" value="Mujer"> Mujer<br>
+            <input type="radio" name="Sexo" value="Hombre"> Hombre
+            <input type="radio" name="Sexo" value="Mujer"> Mujer<br>
             <label>Fecha de nacimientos</label>
             <select name="dia" id="dia">
                 <option value="1">1</option>
@@ -60,7 +60,7 @@ and open the template in the editor.
                 <option value="28">28</option>
                 <option value="29">29</option>
                 <option value="30">30</option>
-                <option value="31"></option>
+                <option value="31">31</option>
             </select>/
             <select name="mes" id="mes">
                 <option value="1">1</option>
@@ -182,18 +182,18 @@ and open the template in the editor.
         <fieldset>
             <legend>Datos usuario:</legend>
             <label for="Usuario">Usuario:</label>
-            <input type="text" id="Usuario"><br>
+            <input type="text" id="Usuario" name="Usuario"><br>
             <label for="Password">Password:</label>
-            <input type="password" id="Password">
+            <input type="password" id="Password" name="Password">
         </fieldset>
         <fieldset>
             <legend>Aficiones:</legend>
-             Viajes <input type="checkbox" name="aficiones" value="Viajes"><br>
-             Deporte <input type="checkbox" name="aficiones" value="Deporte"><br>
-             Lectura <input type="checkbox" name="aficiones" value="Lectura"><br>
-             Cine <input type="checkbox" name="aficiones" value="Cine">
+             Viajes <input type="checkbox" name="Aficiones" value="Viajes"><br>
+             Deporte <input type="checkbox" name="Aficiones" value="Deporte"><br>
+             Lectura <input type="checkbox" name="Aficiones" value="Lectura"><br>
+             Cine <input type="checkbox" name="Aficiones" value="Cine">
         </fieldset>
-
+        <input type="submit" name="boton" id="boton" value="Enviar">
     </form>
 </body>
 

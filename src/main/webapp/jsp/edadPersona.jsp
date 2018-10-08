@@ -21,15 +21,26 @@
             int anioNac = Integer.parseInt(fechaNacS.substring(0, 4));
             LocalDate fechaNac = LocalDate.of(anioNac, mesNac, diaNac);
             Period diferencia = Period.between(fechaNac, LocalDate.now());
-            String cadenaAnios=null, cadenaMeses=null, cadenaDias=null;
+            String cadenaAnios = null, cadenaMeses = null, cadenaDias = null;
             if (!diferencia.isNegative()) {
                 StringBuilder cadena = new StringBuilder(request.getParameter("nombre") + " tienes ");
                 if (diferencia.getYears() == 1) {
                     cadena.append("1 año, ");
                 } else if (diferencia.getYears() > 1) {
-                    cadena.append(diferencia.getYears());
+                    cadena.append(diferencia.getYears()).append(" años, ");
                 }
-            } else {
+                if (diferencia.getMonths() == 1) {
+                    cadena.append("1 mes, ");
+                } else if (diferencia.getYears() > 1) {
+                    cadena.append(diferencia.getMonths()).append(" meses, ");
+                }
+                if (diferencia.getDays() == 1) {
+                    cadena.append("1 día, ");
+                } else if (diferencia.getYears() > 1) {
+                    cadena.append(diferencia.getDays()).append(" días");
+                }
+        %><h1><%= cadena%> </h1>  <%
+        } else {
         %><h1><%= request.getParameter("nombre")%> todavía no has nacido. </h1>  <%
             }
         %>

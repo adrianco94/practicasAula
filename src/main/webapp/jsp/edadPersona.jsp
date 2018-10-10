@@ -21,7 +21,7 @@
             int anioNac = Integer.parseInt(fechaNacS.substring(0, 4));
             LocalDate fechaNac = LocalDate.of(anioNac, mesNac, diaNac);
             Period diferencia = Period.between(fechaNac, LocalDate.now());
-            String cadenaAnios = null, cadenaMeses = null, cadenaDias = null;
+           // String cadenaAnios = null, cadenaMeses = null, cadenaDias = null;
             if (!diferencia.isNegative()) {
                 StringBuilder cadena = new StringBuilder(request.getParameter("nombre") + " tienes ");
                 if (diferencia.getYears() == 1) {
